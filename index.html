@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>網路攻防實習</title>
+<link rel="stylesheet" href="style.css">
+<script src="jsp.js"></script>
+</head>
+<body>
+
+<div id="navbar">
+  <button onclick="showSection('about')">About</button>
+  <button onclick="showSection('message-board')">留言板</button>
+  <div id="visitor-counter">訪客人數: <span id="visitor-count">0</span></div>
+</div>
+
+<div id="about" class="section">
+    <img src="1.jpeg" class="photo" />
+  <h2>張家豪</h2>
+  <p>大家好，這是我網路攻防的作業，歡迎留言！</p>
+</div>
+
+<div id="message-board" class="section" style="display: none;">
+  <h2>留言板</h2>
+  <textarea id="message-input" placeholder="寫下你的留言..."></textarea>
+  <button onclick="postMessage()">張貼留言</button>
+  <div id="messages"></div>
+</div>
+
+</body>
+</html>
